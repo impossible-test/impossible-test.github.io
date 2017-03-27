@@ -1,0 +1,219 @@
+/*************************************************************
+Colors: 
+Top Background: (Light pink) #F0BBF1
+Lower Background: (light purple) #BCB7DB
+On Click: #d6bbf1
+
+Fonts: 
+Headers: font-family: 'Indie Flower', cursive;
+Content: font-family: 'Lato', sans-serif;
+**************************************************************/
+
+/*************************************************************
+Base Styles
+**************************************************************/
+
+html, body, p, h1, h2, h3, div, main, footer, header, nav, li, ul, ol, a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/*************************************************************
+Welcome Page Styles
+**************************************************************/
+
+body {
+    background-image: url("impossible-test-background.jpg");
+    background-size: 100%;
+}
+
+header {
+    background: #F0BBF1;
+    opacity: .95;
+    width: 75%;
+    margin: 0 auto 1%;
+}
+
+.welcome-down-animation {
+    animation: fadeInDown 1s .75s forwards;
+    opacity: 0;
+}
+
+main {
+    background: #BCB7DB;
+    opacity: 0;
+    width: 75%;
+    margin: 0 auto;
+    height: 450px;
+    animation: fadeInUp 1s .75s forwards;
+}
+
+.test-content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.head-text {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: #575757;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.content-text {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.75em;
+    line-height: 1.5;
+}
+
+.welcome-text-spacer {
+    padding-top: 5%;
+}
+
+.boton {
+    background: #F0BBF1;
+    width: 25%;
+    margin: 5% auto;
+    border: 4px solid #333333;
+    text-align: center;
+    transition: 1s;
+}
+
+.boton:hover {
+    background: purple;
+    color: white;
+}
+
+.btn-text {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #575757;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+/*************************************************************
+Question  Pages Styles
+**************************************************************/
+
+.question-head {
+    margin-bottom: 5%;
+}
+
+.question-text {
+    margin-bottom: 5%;
+}
+
+.choice {
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-left: 3%;
+    background: #F0BBF1;
+    transition: .5s;
+}
+
+.choice:focus {
+    background: #FDF6FD;
+}
+
+.choice-text {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.75em;
+    line-height: 1.5;
+    padding-top: 3%;
+}
+
+.choice-text-2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #575757;
+    font-weight: bold;
+    font-size: 1.75em;
+    line-height: 1.5;
+    padding-top: 3%;
+}
+
+.choice-text-hidden {
+    color: #BCB7DB;
+}
+
+.choice-purple {
+    background: purple;
+}
+
+.choice-green {
+    background: green;
+}
+
+.choice-blue {
+    background: blue;
+}
+
+.choice-red {
+    background: red;
+}
+
+.choice-hidden {
+    background: #BCB7DB;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.loading-icon {
+    padding-left: 40%;
+}
+
+.prom-bigger {
+    height: 900px;
+}
+
+.prom-spacer {
+    margin: 0 5% 0 26%;
+}
+
+.final-spacer {
+    margin-top: 5%;
+}
+
+/*********************************************************
+Keyframes
+**********************************************************/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: .95;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: .95;
+    visibility: visible;
+  }
+}
